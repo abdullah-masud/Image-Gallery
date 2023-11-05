@@ -1,8 +1,9 @@
-# React + Vite
+# [Image Gallery App](https://image-gallery-ollyo2.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple image gallery app created using React, Vite, Tailwind CSS, and the DaisyUI component library for designing. It allows users to view images in a grid layout, reorder them by dragging and dropping, and select multiple images for deletion. The key technologies and libraries used in this project are:
 
-Currently, two official plugins are available:
+#### React + Vite, Tailwind CSS, DaisyUI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### React DnD: The React DnD (Drag and Drop) library is used to implement the
+
+The app includes features like image selection, which updates the count of selected images and allows users to delete multiple images at once. Additionally, the first image in the gallery spans two rows and two columns, creating an aesthetically pleasing visual effect.
