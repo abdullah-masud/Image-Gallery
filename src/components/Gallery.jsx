@@ -35,19 +35,19 @@ const Gallery = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto h-screen flex justify-center items-center">
+    <div className="max-w-4xl mx-auto h-screen flex justify-center items-center ">
       <div className="w-full rounded-lg">
         {/* Header Starts*/}
-        <div className="flex justify-between px-12 py-4 border border-b-gray-300 rounded h-17">
+        <div className="flex justify-between px-12 py-4 border border-b-gray-300 rounded ">
           <h2
-            className={`text-xl font-bold ${
+            className={`text-xl font-bold  ${
               selectedImageCount > 0 ? "hidden" : "visible"
             }`}
           >
             Gallery
           </h2>
           <div
-            className={`flex gap-x-2 justify-center items-center ${
+            className={`flex text-lg gap-x-2 justify-center items-center  ${
               selectedImageCount > 0 ? "visible" : "invisible"
             }`}
           >
@@ -56,7 +56,7 @@ const Gallery = () => {
               checked="checked"
               className="checkbox checkbox-sm checkbox-info"
             />
-            <h2 className="font-bold">{selectedImageCount} files Selected</h2>
+            <h2 className="font-bold ">{selectedImageCount} files Selected</h2>
           </div>
 
           <button
