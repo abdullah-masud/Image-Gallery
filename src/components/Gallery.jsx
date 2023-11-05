@@ -36,11 +36,11 @@ const Gallery = () => {
 
   return (
     <div className="max-w-4xl mx-auto h-screen flex justify-center items-center ">
-      <div className="w-full rounded-lg">
+      <div className="w-full rounded-lg lg:px-0 px-12">
         {/* Header Starts*/}
-        <div className="flex justify-between px-12 py-4 border border-b-gray-300 rounded ">
+        <div className="flex justify-between lg:px-12 px-2 py-4 items-center  border border-b-gray-300 rounded ">
           <h2
-            className={`text-xl font-bold  ${
+            className={`lg:text-xl font-bold  ${
               selectedImageCount > 0 ? "hidden" : "visible"
             }`}
           >
@@ -54,9 +54,11 @@ const Gallery = () => {
             <input
               type="checkbox"
               checked="checked"
-              className="checkbox checkbox-sm checkbox-info"
+              className="checkbox checkbox-sm checkbox-info "
             />
-            <h2 className="font-bold ">{selectedImageCount} files Selected</h2>
+            <h2 className="font-bold lg:text-xl text-sm">
+              {selectedImageCount} files Selected
+            </h2>
           </div>
 
           <button
@@ -71,7 +73,7 @@ const Gallery = () => {
         {/* Header Ends*/}
 
         {/* gallery Starts*/}
-        <div className="grid grid-cols-5  place-items-center gap-4 py-4">
+        <div className="grid lg:grid-cols-5 grid-cols-3  place-items-center gap-4 py-4">
           {images.map((image, index) => (
             <SinglePictures
               src={image.img}
@@ -87,7 +89,7 @@ const Gallery = () => {
           ))}
           <div className="col-span-1 row-span-1 outline-dashed outline-gray-200 rounded flex flex-col justify-center items-center	w-full h-full">
             <BsImages />
-            <h2 className="font-medium">Add Images</h2>
+            <h2 className="font-medium lg:text-lg text-xs">Add Images</h2>
           </div>
         </div>
         {/* gallery Ends*/}

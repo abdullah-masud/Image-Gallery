@@ -6,4 +6,34 @@ This project is a simple image gallery app created using React, Vite, Tailwind C
 
 #### React DnD: The React DnD (Drag and Drop) library is used to implement the
 
-The app includes features like image selection, which updates the count of selected images and allows users to delete multiple images at once. Additionally, the first image in the gallery spans two rows and two columns, creating an aesthetically pleasing visual effect.
+## Features
+
+1. **Gallery Layout**
+
+- Implemented a grid layout for the image gallery.
+- Created a visually appealing layout, with one feature image larger than the others.
+
+2. **Sorting**
+
+- Enabled reordering functionality, allowing users to rearrange the order of images in the gallery.
+- Implemented a drag-and-drop feature for intuitive image sorting.
+
+3. **Deleting Multiple Images**
+
+- Implemented the ability for users to select multiple images and delete them.
+- Provided a clear visual indication of selected images.
+
+4. **Setting Feature Image**
+
+- Allowed users to set a feature image by sorting.
+- Set the first image from left to right (LTR direction) as the featured image.
+- Made the feature image visually distinct from the other images.
+
+5. **User Experience**
+
+- Ensured a smooth and responsive user experience.
+- Implemented transitions or animations for a polished and visually pleasing look and feel.
+
+6. **Live Demo**
+
+- Hosted the React JS image gallery on a [netlify](https://image-gallery-ollyo2.netlify.app/).
